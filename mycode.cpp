@@ -187,3 +187,27 @@ ListNode* addTwoNumbers(ListNode* l1, ListNode* l2) {
 
     return dummy.next; // Return the next node to skip the dummy head
 }
+
+ListNode* detectCycle(ListNode* head) {
+    if (head == nullptr) return nullptr;
+
+    ListNode* slow = head;
+    ListNode* fast = head;
+
+    while (fast != nullptr && fast->next != nullptr) {
+        slow = slow->next;
+        fast = fast->next->next;
+
+        if (slow == fast) {
+            // Cycle detected
+            ListNode* entry = head;
+            while (entry != slow) {
+                entry = entry->next;
+                slow = slow->next;
+            }
+            return entry; // Start of the cycle
+        }
+    }
+
+    return nullptr; // No cycle
+}
