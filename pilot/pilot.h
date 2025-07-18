@@ -1,4 +1,4 @@
 #pragma once
 #include <vector>
 
-std::vector<std::complex<double>> generate_bpsk_pilot(int N);
+std::vector<std::vector<std::complex<double>>> generate_mimo_bpsk_pilots(int N, int Nt);

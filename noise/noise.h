@@ -3,4 +3,4 @@
 #include <vector>
 #include <complex>
 
-std::vector<std::complex<double>> generate_noise(int N, double R);
+std::vector<std::vector<std::complex<double>>> generate_mimo_noise(int N, int Nr, double R) ;
