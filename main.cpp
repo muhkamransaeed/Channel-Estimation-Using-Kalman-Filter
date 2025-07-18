@@ -10,8 +10,8 @@
 
 int main() {
     int N = 100;
-    int Nt=2;
-    int Nr=2;
+    int Nt=32;
+    int Nr=4;
     double alpha = 0.9;
     double Q = 0.01;
     double R = 0.1;
