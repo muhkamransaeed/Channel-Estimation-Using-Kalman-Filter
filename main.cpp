@@ -1,12 +1,12 @@
 #include <iostream>
 #include <vector>
 #include <complex>
-#include "../pilot/pilot.h"
-#include "../channel/channel.h"
-#include "../noise/noise.h"
-#include "../kalman/kalman.h"
-#include "../least_square/least_square.h"
-#include "../util/util.h"
+#include "./pilot/pilot.h"
+#include "./channel/channel.h"
+#include "./noise/noise.h"
+#include "./kalman/kalman.h"
+#include "./least_square/least_square.h"
+#include "./util/util.h"
 
 int main() {
     int N = 100;
